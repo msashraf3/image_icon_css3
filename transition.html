@@ -7,9 +7,16 @@
     <title>About transition</title>
     <style>
         .box{
-            width: 100px;
+            width: 200px;
             height: 200px;
             border: 1px solid pink;
+            background-color: powderblue;
+            transition: width 5s , height 5s, transform 5s;
+        }
+        .box:hover{
+            width: 500px;
+            height: 500px;
+            transform: rotate(90deg);
         }
     </style>
 </head>
