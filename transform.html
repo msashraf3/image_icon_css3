@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Transform</title>
+    <style>
+        .outer-box, .inner-box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid salmon;
+        }
+        .outer-box{
+            background-color: powderblue;
+        }
+        .inner-box{
+            border: 1px solid palevioletred;
+            background-color: yellowgreen;
+            transform: translate(30px,30px) scale(.68) rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transformation</h1>
+    <div class="outer-box">
+        <div class="inner-box">content1</div>
+    </div>
+    <div class="outer-box">
+        <div class="inner-box">content2</div>
+    </div>
+    <div class="outer-box">
+        <div class="inner-box">content3</div>
+    </div>
+</body>
+</html>
