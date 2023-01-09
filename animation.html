@@ -5,8 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Another Animation</title>
+    <style>
+        @keyframes sliding {
+            0%{
+                background-color: yellow;
+                left: 0px;
+                top: 0px;
+            }
+            25%{
+                top: 320px;
+                transform: scale(0.5);
+                background-color: pink;
+            }
+            50%{
+                background-color: yellow;
+                top: 0px;
+                transform: scale(1);
+            }
+            75%{
+                background-color: pink;
+                top: 320px;
+                transform: scale(0.5);
+            }
+            100%{
+                background-color: yellow;
+                left: 700px;
+                top:0px;
+            }
+        }
+        .field{
+            background-color: lightseagreen;
+            width: 800px;
+            height: 400px;
+        }
+        .ball{
+            border-radius: 50%;
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            animation: sliding 3s ease-in-out 2s infinite alternate ;
+            position: relative;
+        }
+        
+    </style>
 </head>
 <body>
     <h1>More animations</h1>
+    <div class="field">
+        <div class="ball"></div>
+    </div>
 </body>
 </html>
